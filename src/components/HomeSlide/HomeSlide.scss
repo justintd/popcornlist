@@ -40,25 +40,15 @@
   color: $tertiary-color;
 }
 
-.home-genre {
-  font-size: 19px;
-  display: flex;
-  align-content: center;
-  color: $tertiary-color;
-}
-
-.home-rating {
+.home-rating,
+.home-genre,
+.home-description {
   color: $tertiary-color;
   font-size: 19px;
   i {
     color: $secondary-color;
-    font-size: 17px;
+    font-size: 16px;
   }
-}
-
-.home-description {
-  font-size: 19px;
-  color: $tertiary-color;
 }
 
 /* SWIPER STYLING */
@@ -77,4 +67,25 @@
 .swiper-pagination-bullet-active {
   opacity: 1;
   background: $secondary-color;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1300px) {
+  .home-text-container {
+    min-width: 230px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .home-title {
+    font-size: 28px;
+  }
+  .home-rating,
+  .home-genre,
+  .home-description {
+    font-size: 16px;
+    i {
+      font-size: 14px;
+    }
+  }
 }
